@@ -15,7 +15,7 @@ export default class Start extends React.Component {
       }>
         <ImageBackground
           style={styles.background}
-          source={require('../assets/background.png')}
+          source={require('../assets/background.jpg')} // Photo by Brooke Cagle on Unsplash
         >
           <View style={styles.titleView}>
             <Text style={styles.title}>Chitter-Chatter</Text>
@@ -42,37 +42,37 @@ export default class Start extends React.Component {
               <View style={styles.colorSelectionPalette}>
                 <TouchableOpacity
                   style={styles.colorSelectionPalette1}
-                  onPress={() => this.setState({ colorSelectionBackground: '#090C08' })}
+                  onPress={() => this.setState({ colorSelectionBackground: '#f2bf5e' })}
                   // Adds accessibility features
                   accessible={true}
-                  accessibilityLabel="color: #090C08"
+                  accessibilityLabel="color: #f2bf5e"
                   accessibilityHint="By clicking on this button, you can choose the chat room's background color."
                   accessibilityRole="Button"
                 />
                 <TouchableOpacity
                   style={styles.colorSelectionPalette2}
-                  onPress={() => this.setState({ colorSelectionBackground: '#474056' })}
+                  onPress={() => this.setState({ colorSelectionBackground: '#7da7d9' })}
                   // Adds accessibility features
                   accessible={true}
-                  accessibilityLabel="color: #474056"
+                  accessibilityLabel="color: #7da7d9"
                   accessibilityHint="By clicking on this button, you can choose the chat room's background color."
                   accessibilityRole="Button"
                 />
                 <TouchableOpacity
                   style={styles.colorSelectionPalette3}
-                  onPress={() => this.setState({ colorSelectionBackground: '#8A95A5' })}
+                  onPress={() => this.setState({ colorSelectionBackground: '#b3e0f2' })}
                   // Adds accessibility features
                   accessible={true}
-                  accessibilityLabel="color: #8A95A5"
+                  accessibilityLabel="color: #b3e0f2"
                   accessibilityHint="By clicking on this button, you can choose the chat room's background color."
                   accessibilityRole="Button"
                 />
                 <TouchableOpacity
                   style={styles.colorSelectionPalette4}
-                  onPress={() => this.setState({ colorSelectionBackground: '#B9C6AE' })}
+                  onPress={() => this.setState({ colorSelectionBackground: '#72b2a2' })}
                   // Adds accessibility features
                   accessible={true}
-                  accessibilityLabel="color: #B9C6AE"
+                  accessibilityLabel="color: #72b2a2"
                   accessibilityHint="By clicking on this button, you can choose the chat room's background color."
                   accessibilityRole="Button"
                 />
@@ -111,13 +111,13 @@ const styles = StyleSheet.create({
   },
 
   titleView: {
-    flex: 0.5,
+    flex: 0.6,
   },
 
   title: {
     fontSize: 45,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: '#000',
     height: 60,
   },
   whiteBox: {
@@ -163,28 +163,28 @@ const styles = StyleSheet.create({
   },
 
   colorSelectionPalette1: {
-    backgroundColor: '#090C08',
+    backgroundColor: '#f2bf5e',
     width: 50,
     height: 50,
     borderRadius: 25,
   },
 
   colorSelectionPalette2: {
-    backgroundColor: '#474056',
+    backgroundColor: '#7da7d9',
     width: 50,
     height: 50,
     borderRadius: 25,
   },
 
   colorSelectionPalette3: {
-    backgroundColor: '#8A95A5',
+    backgroundColor: '#b3e0f2',
     width: 50,
     height: 50,
     borderRadius: 25,
   },
 
   colorSelectionPalette4: {
-    backgroundColor: '#B9C6AE',
+    backgroundColor: '#72b2a2',
     width: 50,
     height: 50,
     borderRadius: 25,
@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height: 60,
-    backgroundColor: '#757083',
+    backgroundColor: '#3089a2',
   },
 
   buttonText: {
