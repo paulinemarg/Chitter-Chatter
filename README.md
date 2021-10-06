@@ -1,37 +1,70 @@
-<h1 align="center">Chitter-Chatter</h1>
+# Chitter Chatter 💬📱
 
-Is a Chat app for mobile devices using React Native. The app provide users with a chat interface and options to share images and their location.
+![chitter-chatter](/chitter-chatter.png)
 
-## Features and Requirements 
+## Description
 
-### User Stories
-* As a new user, I want to be able to easily enter a chat room so I can quickly start talking to my friends and family.
-* As a user, I want to be able to send messages to my friends and family members to exchange the latest news.
-* As a user, I want to send images to my friends to show them what I’m currently doing.
-* As a user, I want to share my location with my friends to show them where I am.
-* As a user, I want to be able to read my messages offline so I can reread conversations at any time.
-* As a user with a visual impairment, I want to use a chat app that is compatible with a screen reader so that I can engage with a chat interface.
+A chat app for mobile devices built with React Native. The app provides users with a chat interface and options to share images and their location.
 
+The app is written in React Native and developed using Expo. Styling is in accordance with a provided design assets. The app stores chat conversations in Google Firestore Database and uses Google Firebase authentication to authenticate uses anonymously. Chat conversations are stored locally as well and the app is accessible while the user is offline. The Gifted Chat library is used to create the chat interface and its functionality.
 
-### Key Features
-* A page where users can enter their name and choose a background color for the chat screen before joining the chat.
-* A page displaying the conversation, as well as an input field and submit button.
-* The chat must provide users with two additional communication features: sending images
-and location data.
-* Data gets stored online and offline.
+The app allows users to pick and send images from their phone's image library provided the user grants the app permission to access their media library and camera. Users can share their location by enabling the app to read user location data.
 
+## Technologies
+
+- React Native
+- Expo
+- Google Firestore Database
+- Gifted Chat library
+- Android Studio
+
+## Key Features
+
+- A page where users can enter their name and choose a background color for the chat screen before joining chat
+- A page displaying the conversation, as well as an input field and submit button
+- The chat must provide users with two additional communication features: sending images and location data
+- Data gets stored online and offline
+
+## Get Started 🚀
 
 ### Technical Requirements
-* The app must be written in React Native.
-* The app must be developed using Expo.
-* The app must be styled according to the given screen design.
-* Chat conversations must be stored in Google Firestore Database.
-* The app must authenticate users anonymously via Google Firebase authentication.
-* Chat conversations must be stored locally.
-* The app must let users pick and send images from the phone’s image library.
-* The app must let users take pictures with the device’s camera app, and send them.
-* The app must store images in Firebase Cloud Storage.
-* The app must be able to read the user’s location data.
-* Location data must be sent via the chat in a map view.
-* The chat interface and functionality must be created using the Gifted Chat library.
-* The app’s codebase must contain comments.
+
+- Node.js
+- Expo Command Line Interface
+
+```
+npm install expo-cli --global
+```
+
+- If you would like to run the app on your mobile device, you'll need to install the Expo app through your device's app store (iOS or Android)
+- You will also need an Expo account which can be created via [Expo.io](https://expo.io)
+- You will need to login into Expo in order to access the App
+
+  - Logging into Expo through the CLI on your machine
+  - Logging into Expo on your mobile device in the Expo app
+
+- If you would like to run the app on your machine through a simulator/emulator, you will either need
+  - [Android Studio](https://docs.expo.io/workflow/android-studio-emulator/)
+  - [iOS Simulator](https://docs.expo.io/workflow/ios-simulator/)
+
+### Installing Dependencies
+
+In the project directory install the application's dependencies.
+
+```
+npm install
+```
+
+### Running the App
+
+```
+expo start
+```
+
+#### Running the App on Your Mobile Device
+
+After using the "expo start" command to run the app, you can use your mobile device to scan the provided QR code displayed in the command line interface and it will be opened on your mobile device through your mobile device's Expo app.
+
+#### Running the App with Android Studio or
+
+With the command line interface open after using the 'expo start' command, press 'a' to run the app with an Android emulator, or press 'i' to run the app with iOS simulator.
