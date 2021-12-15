@@ -1,5 +1,7 @@
 # Chitter Chatter 💬📱
 
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/paulinemarg/Chitter-Chatter"> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/paulinemarg/Chitter-Chatter?color=green"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/paulinemarg/Chitter-Chatter?color=yellow"> <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/paulinemarg/Chitter-Chatter?style=plastic">
+
 ![chitter-chatter](/chitter-chatter.png)
 
 ## Description
